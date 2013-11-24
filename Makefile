@@ -1,4 +1,4 @@
-# Vengeance Kernel
+# Intuisy Kernel XSSDP
 
 VERSION = 3
 PATCHLEVEL = 0
