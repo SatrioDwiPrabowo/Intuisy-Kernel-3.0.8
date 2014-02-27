@@ -4934,6 +4934,7 @@ int __init msm_fb_init(void)
 	return 0;
 }
 
+# XSSDP
 module_param(align_buffer, bool, 0644);
 
 module_init(msm_fb_init);
