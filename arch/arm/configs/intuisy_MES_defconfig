@@ -2898,3 +2898,7 @@ CONFIG_HAS_IOPORT=y
 CONFIG_HAS_DMA=y
 CONFIG_NLATTR=y
 # CONFIG_AVERAGE is not set
+#
+# Config Sony Super Stamina Mode supported by SatrioDwiPrabowo
+#
+CONFIG_SONY_SSM=y
