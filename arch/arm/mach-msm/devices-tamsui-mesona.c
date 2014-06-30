@@ -649,13 +649,15 @@ struct platform_device msm_kgsl_3d0 = {
 
 void __init msm7x25a_kgsl_3d0_init(void)
 {
-	if (cpu_is_msm7x25a() || cpu_is_msm7x25aa()) {
-		kgsl_3d0_pdata.num_levels = 2;
-		kgsl_3d0_pdata.pwrlevel[0].gpu_freq = 133330000;
-		kgsl_3d0_pdata.pwrlevel[0].bus_freq = 160000000;
-		kgsl_3d0_pdata.pwrlevel[1].gpu_freq = 96000000;
-		kgsl_3d0_pdata.pwrlevel[1].bus_freq = 0;
-	}
+        if (cpu_is_msm7x25a() || cpu_is_msm7x25aa()) {
+                kgsl_3d0_pdata.num_levels = 3;
+                kgsl_3d0_pdata.pwrlevel[0].gpu_freq = 250000000;        
+                kgsl_3d0_pdata.pwrlevel[0].bus_freq = 180000000;
+                kgsl_3d0_pdata.pwrlevel[1].gpu_freq = 173000000;
+                kgsl_3d0_pdata.pwrlevel[1].bus_freq = 160000000;
+                kgsl_3d0_pdata.pwrlevel[2].gpu_freq = 96000000;
+                kgsl_3d0_pdata.pwrlevel[2].bus_freq = 0;
+        }
 }
 
 static void __init msm_register_device(struct platform_device *pdev, void *data)
