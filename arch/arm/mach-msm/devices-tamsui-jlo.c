@@ -615,10 +615,10 @@ static struct resource kgsl_3d0_resources[] = {
 
 static struct kgsl_device_platform_data kgsl_3d0_pdata = {
                 .pwrlevel = {
-                        /* Overclock GPU Xperia J */
+                        /* Overclock GPU Xperia J Intuisy Kernel */
                         {
-                                .gpu_freq = 355760000,
-                                .bus_freq = 213760000,
+                                .gpu_freq = 455760000,
+                                .bus_freq = 313760000,
                         },
                         {
                                 .gpu_freq = 320000000,
